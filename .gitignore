@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# C++ compiled binaries
+02-insurance-crm-cpp/main
+*.o
+*.out
+
+# VS Code
+.vscode/
+
+# Archives (keep source, skip zip duplicates)
+*.zip
+
+# Claude Code config files
+CLAUDE.md
+
+# Reference/course materials (not part of portfolio)
+reference_materials/
+
+# PyTorch model weights
+*.pt
+*.pth
