@@ -17,7 +17,7 @@ A collection of 11 hands-on projects built across the full AI Engineering curric
 | 07 | [Neural Network Optimization — Food Sector](#07-food-industry-nn-optimization) | PyTorch | PyTorch, Transfer Learning, Albumentations |
 | 08 | [Flower Recognition for AgriTech](#08-agritech-flower-recognition) | Computer Vision | PyTorch, TIMM, GradCAM, YOLO |
 | 09 | [Healthcare Cybersecurity via RL](#09-healthcare-cybersecurity-rl) | Reinforcement Learning | SARSA, DDQN, gym-idsgame |
-| 10 | [Data Augmentation for Power Plant Security](#10-power-plant-data-augmentation) | Generative AI | BLIP, Stable Diffusion, Diffusers |
+| 10 | [Data Augmentation for Power Plant Security](#10-power-plant-data-augmentation) | Generative AI | BLIP, Flan-T5, FLUX, ResNet18 |
 | 11 | [Banking Compliance with Explainable AI](#11-banking-compliance-xai) | Explainable AI | PyTorch, DenseNet, SHAP, LIME, Captum |
 
 ---
@@ -189,11 +189,13 @@ An RL system to defend hospital networks against simulated cyberattacks. Impleme
 
 **Topic:** Generative AI · Diffusion Models · Vision
 
-A generative pipeline for CyberEye Solutions to augment surveillance image datasets for critical infrastructure protection. Uses BLIP for image captioning and Stable Diffusion for synthetic image generation.
+A generative data-augmentation pipeline for CyberEye Solutions to expand a small, imbalanced surveillance image dataset for critical infrastructure protection. The OxfordIIITPet dataset (37 cat/dog breeds) is used as a proxy for the real surveillance domain. The pipeline auto-captions each image (BLIP), paraphrases the captions with a text-generation model (Flan-T5), generates new synthetic images from the refined captions (FLUX.1-schnell), then measures the impact by training a ResNet18 classifier on the original vs. the augmented dataset.
 
-**Key concepts:** image captioning (BLIP), text-to-image generation (Stable Diffusion), diffusion model theory, N-grams, LSTM text generation, Autoencoder, GAN, Transformers overview.
+**Key concepts:** image captioning (BLIP), text generation / caption paraphrasing (Flan-T5), text-to-image diffusion (FLUX.1-schnell), diffusion model theory, class-imbalance / weak-class targeting, transfer learning (ResNet18 pretrained on ImageNet), generative quality metrics (FID, KID, Inception Score), classification metrics (accuracy, precision, recall, F1).
 
-**Stack:** `Transformers (HuggingFace)` · `Diffusers` · `Accelerate` · `PyTorch` · `OxfordIIITPet dataset`
+**Result:** on the 10 weakest classes, the augmented model improved F1 by +18.9% and recall by +21.4% (global F1 +0.8%), with the quality/imbalance trade-off documented.
+
+**Stack:** `Transformers (HuggingFace)` · `Diffusers` · `FLUX.1-schnell` · `Flan-T5` · `BLIP` · `PyTorch` · `OxfordIIITPet`
 
 ```
 10-power-plant-data-augmentation/
@@ -225,7 +227,7 @@ An XAI audit for Banca Virtuosa, applying multiple explainability techniques to 
 Programming Languages    Python · C++
 ML Frameworks            scikit-learn · PyTorch · TensorFlow/Keras
 Computer Vision          OpenCV · TIMM · Albumentations · YOLO · GradCAM
-Generative AI            HuggingFace Diffusers · BLIP · Stable Diffusion · GANs · LSTMs
+Generative AI            HuggingFace Diffusers · FLUX · Flan-T5 · BLIP
 Reinforcement Learning   SARSA · DQN · DDQN · PPO · Actor-Critic · gym-idsgame
 Explainable AI           SHAP · LIME · Captum · Saliency Maps · GradCAM
 MLOps                    FastAPI · Docker · MLflow · Prometheus · Grafana · pytest
