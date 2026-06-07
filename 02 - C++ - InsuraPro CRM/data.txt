@@ -1,0 +1,19 @@
+1,John,Doe,+1234567890,john.doe@example.com
+CONTRATTO,1999-10-12,polizza cristalli
+CONTRATTO,2003-12-03,polizza RCA
+CONTRATTO,2025-07-10,Contratto stipulato per assicurazione auto
+APPUNTAMENTO,2025-07-11,15:30,Appuntamento per revisione polizza
+2,Jane,Doe,+9876543210,jane.doe@example.com
+CONTRATTO,2025-07-12,Contratto stipulato per assicurazione casa
+3,John,Smith,+1122334455,john.smith@example.com
+APPUNTAMENTO,2025-07-13,10:00,Appuntamento per consulenza finanziaria
+4,Emily,Johnson,+9988776655,emily.johnson@example.com
+CONTRATTO,2025-07-14,Contratto stipulato per assicurazione vita
+APPUNTAMENTO,2025-07-15,14:00,Appuntamento per aggiornamento polizza
+5,Michael,Brown,+4455667788,michael.brown@example.com
+CONTRATTO,2025-07-16,Contratto stipulato per assicurazione sanitaria
+6,Sarah,Smith,+5566778899,sarah.smith@example.com
+APPUNTAMENTO,2025-07-17,09:30,Appuntamento per revisione polizza casa
+7,David,Johnson,+6677889900,david.johnson@example.com
+CONTRATTO,2025-07-18,Contratto stipulato per assicurazione auto
+APPUNTAMENTO,2025-07-19,16:00,Appuntamento per consulenza assicurativa
