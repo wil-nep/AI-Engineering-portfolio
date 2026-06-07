@@ -12,7 +12,7 @@ A collection of 11 hands-on projects built across the full AI Engineering curric
 | 02 | [InsuraPro CRM System — C++](#02-insurance-crm-cpp) | C++ | C++, OOP, File I/O |
 | 03 | [Real Estate Price Prediction](#03-real-estate-price-prediction) | Machine Learning | scikit-learn, pandas, GridSearchCV |
 | 04 | [Exotic Fruit Classifier](#04-exotic-fruit-classifier) | Machine Learning | scikit-learn, KNN, SVM |
-| 05 | [Brand Reputation Monitoring](#05-brand-reputation-monitoring) | MLOps | FastAPI, Docker, MLflow, Prometheus |
+| 05 | [Brand Reputation Monitoring](#05-brand-reputation-monitoring) | MLOps | FastAPI, Docker, Prometheus/Grafana, GitHub Actions |
 | 06 | [Animal Detection for Autonomous Driving](#06-autonomous-driving-animal-detection) | Deep Learning | TensorFlow, Keras, CNN, CIFAR-10 |
 | 07 | [Neural Network Optimization — Food Sector](#07-food-industry-nn-optimization) | PyTorch | PyTorch, Transfer Learning, Albumentations |
 | 08 | [Flower Recognition for AgriTech](#08-agritech-flower-recognition) | Computer Vision | PyTorch, TIMM, GradCAM, YOLO |
@@ -100,9 +100,9 @@ A multi-class classification system to identify exotic fruit species from featur
 
 A production-ready MLOps pipeline for real-time social media sentiment analysis. Includes model training, REST API serving, containerization, and observability.
 
-**Key concepts:** model serving with FastAPI, Docker containerization, experiment tracking with MLflow, monitoring with Prometheus/Grafana, unit testing.
+**Key concepts:** model serving with FastAPI, Docker containerization, CI/CD with GitHub Actions, monitoring with Prometheus/Grafana, automated retraining, unit testing.
 
-**Stack:** `FastAPI` · `Docker` · `MLflow` · `Prometheus` · `scikit-learn` · `pytest`
+**Stack:** `FastAPI` · `Docker` · `Prometheus` · `Grafana` · `GitHub Actions` · `Transformers (RoBERTa)` · `pytest`
 
 ```
 05-brand-reputation-monitoring/
@@ -230,7 +230,7 @@ Computer Vision          OpenCV · TIMM · Albumentations · YOLO · GradCAM
 Generative AI            HuggingFace Diffusers · FLUX · Flan-T5 · BLIP
 Reinforcement Learning   SARSA · DQN · DDQN · PPO · Actor-Critic · gym-idsgame
 Explainable AI           SHAP · LIME · Captum · Saliency Maps · GradCAM
-MLOps                    FastAPI · Docker · MLflow · Prometheus · Grafana · pytest
+MLOps                    FastAPI · Docker · GitHub Actions · Prometheus · Grafana · pytest
 ```
 
 ---
